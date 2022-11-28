@@ -35,10 +35,20 @@ defmodule Kr260Test.Application do
       # Children for all targets except host
       # Starts a worker by calling: Kr260Test.Worker.start_link(arg)
       # {Kr260Test.Worker, arg},
-    ]
+    ] ++ dfx_mgrd()
   end
 
   def target() do
     Application.get_env(:kr260_test, :target)
+  end
+
+  defp dfx_mgrd() do
+    dfx_mgrd = "/usr/bin/dfx-mgrd"
+
+    if File.exists?(dfx_mgrd) do
+      [{MuonTrap.Daemon, [dfx_mgrd, [], [cd: "/root"]]}]
+    else
+      []
+    end
   end
 end
