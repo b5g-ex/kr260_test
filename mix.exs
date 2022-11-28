@@ -35,6 +35,8 @@ defmodule Kr260Test.MixProject do
       {:shoehorn, "~> 0.9.1"},
       {:ring_logger, "~> 0.8.5"},
       {:toolshed, "~> 0.2.26"},
+      {:circuits_gpio, "~> 1.0"},
+      {:circuits_i2c, "~> 1.0"},
 
       # Dependencies for all targets except :host
       {:nerves_runtime, "~> 0.13.0", targets: @all_targets},
