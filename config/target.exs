@@ -13,9 +13,7 @@ config :shoehorn, init: [:nerves_runtime, :nerves_pack]
 config :nerves,
   erlinit: [
     hostname_pattern: "nerves-%s",
-    ctty: "ttyPS1",
-    mount: "configfs:/configfs:configfs:nodev,noexec,nosuid:",
-    mount: "tmpfs:/lib/firmware:tmpfs:nodev,nosuid:mode=755,size=64M"
+    ctty: "ttyPS1"
   ]
 
 # Configure the device for SSH IEx prompt access and firmware updates
