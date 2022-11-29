@@ -4,11 +4,6 @@
 
 nerves_system_kr260 の テスト用リポジトリです。
 
-動作確認のために必要な rootfs_overlay 配下のリソースの多くは、
-[Ubuntu for Kris SOMs](https://ubuntu.com/download/amd-xilinx) から引っ張ってきています。
-
-see. https://github.com/b5g-ex/kr260_test/commit/54909fd128e9db64bffd1feeb6aef6e1bd795f09
-
 ## Targets
 
 Nerves applications produce images for hardware targets based on the
