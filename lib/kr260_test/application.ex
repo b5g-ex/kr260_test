@@ -46,7 +46,7 @@ defmodule Kr260Test.Application do
     dfx_mgrd = "/usr/bin/dfx-mgrd"
 
     if File.exists?(dfx_mgrd) do
-      [{MuonTrap.Daemon, [dfx_mgrd, [], [cd: "/root"]]}]
+      [{MuonTrap.Daemon, [dfx_mgrd, [], [cd: "/lib/firmware"]]}]
     else
       []
     end
