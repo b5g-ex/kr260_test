@@ -50,7 +50,7 @@ defmodule Kr260Test.MixProject do
       # changes to your application are needed.
       # {:nerves_system_kr260,
       #  path: "/home/pojiro/Repos/nerves_system_kr260", runtime: false, targets: :kr260}
-      {:nerves_system_kr260, "~> 0.0.1", runtime: false, targets: :kr260}
+      {:nerves_system_kr260, "~> 0.1.0", runtime: false, targets: :kr260}
     ]
   end
 
